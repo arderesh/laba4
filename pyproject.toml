@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algosi"
+version = "0.1.0"
+description = "Algorithmic mini-package for lab 4"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
