@@ -1,6 +1,6 @@
 sort,input_type,size,repeats,median_seconds,status
-insertion_sort,random,100000,0,,skipped
-fast_sort,random,100000,5,0.08897137500025565,okey
+insertion_sort,random,100000,5,93.61314779199893,okey
+fast_sort,random,100000,5,0.07818741599476198,okey
 insertion_sort,sorted,100000,5,0.004630290999557474,okey
 fast_sort,sorted,100000,5,0.0550282080002944,okey
 insertion_sort,reverse,100000,0,,skipped

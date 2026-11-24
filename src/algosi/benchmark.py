@@ -41,7 +41,10 @@ def run_benchmark(output_path="bench_res.csv"):
                 else:
                     values = generate(size)
                 for sort_name, sort_func in sorts:
-                    if sort_func is insertion_sort and input_type in {"random", "reverse", "duplicates"}:
+                    if sort_func is insertion_sort and (
+                        input_type in {"reverse", "duplicates"}
+                        or (input_type == "random" and size > 100_000)
+                    ):
                         writer.writerow([sort_name, input_type, size, 0, "", "skipped"])
                         continue
                     times = counter_time_sort(sort_func, values)
